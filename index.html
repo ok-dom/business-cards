@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Scroll Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        ol {
+            list-style-type: none;
+            padding: 0;
+            counter-reset: item;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            counter-increment: item;
+        }
+        li::before {
+            content: counter(item) ". ";
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .image-container {
+            display: flex;
+            gap: 10px;
+        }
+        .image-container img {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ol>
+            <li>
+                <div class="image-container">
+                    <img src="image1a.jpg" alt="Image 1a">
+                    <img src="image1b.jpg" alt="Image 1b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image2a.jpg" alt="Image 2a">
+                    <img src="image2b.jpg" alt="Image 2b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image3a.jpg" alt="Image 3a">
+                    <img src="image3b.jpg" alt="Image 3b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image4a.jpg" alt="Image 4a">
+                    <img src="image4b.jpg" alt="Image 4b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image5a.jpg" alt="Image 5a">
+                    <img src="image5b.jpg" alt="Image 5b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image6a.jpg" alt="Image 6a">
+                    <img src="image6b.jpg" alt="Image 6b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image7a.jpg" alt="Image 7a">
+                    <img src="image7b.jpg" alt="Image 7b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image8a.jpg" alt="Image 8a">
+                    <img src="image8b.jpg" alt="Image 8b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image9a.jpg" alt="Image 9a">
+                    <img src="image9b.jpg" alt="Image 9b">
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="image10a.jpg" alt="Image 10a">
+                    <img src="image10b.jpg" alt="Image 10b">
+                </div>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+
